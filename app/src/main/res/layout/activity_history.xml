@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HistoryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_titleMain"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bloodmeter"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLOOD SUGAR TEST HISTORY"
+            android:textColor="@android:color/white"
+            android:textSize="42sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/adView"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/listView_records"
+        android:layout_below="@+id/linearLayout_titleMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5116262951762775/3734376820">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

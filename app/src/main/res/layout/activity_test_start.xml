@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TestStart">
+
+    <LinearLayout
+        android:id="@+id/imageView_fingerPlace"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/fingerprint">
+
+        <View
+            android:id="@+id/bar"
+            android:layout_width="200dp"
+            android:layout_height="6dp"
+            android:visibility="gone"
+            android:background="@drawable/scan_line"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView_fingerPlace"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:srcCompat="@drawable/fingerprint" />-->
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageView_fingerPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:text="Hold for scan"/>
+</RelativeLayout>
